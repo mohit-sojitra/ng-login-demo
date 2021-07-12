@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, enableProdMode } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
@@ -6,8 +6,8 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
+
 export class AppComponent {
-  title = 'ng-login';
   loginForm: FormGroup;
 
   constructor() {
